@@ -25,6 +25,20 @@
 - ✅ 更新索引文件 (index.md)
 - ✅ 建立双向链接
 
+## [2026-04-13 18:45] cleanup | 清理过程文件
+
+- ✅ 删除 SETUP-PROGRESS.md
+- ✅ 删除 GITHUB-SYNC.md
+- ✅ 删除 SYNC-GUIDE.md
+- ✅ 简化 README.md
+
+## [2026-04-13 18:52] create | 创建 Hermes Agent 相关页面
+
+- ✅ 创建项目页面：[[Hermes Agent]]
+- ✅ 创建公司页面：[[Nous Research]]
+- ✅ 更新索引 (4 个页面)
+- ✅ 建立双向链接
+
 **下一步**:
 - [ ] 推送到 GitHub
 - [ ] 用户本地拉取查看
