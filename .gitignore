@@ -1,0 +1,20 @@
+# Obsidian
+.obsidian/plugins/
+.obsidian/cache/
+.obsidian/workspace.json
+
+# Attachments (可选，如果太大建议用 Git LFS)
+# 06-Attachments/*.pdf
+# 06-Attachments/*.mp3
+# 06-Attachments/*.mp4
+
+# Node modules (如果有本地脚本)
+node_modules/
+
+# Environment
+.env
+.env.local
+
+# OS
+.DS_Store
+Thumbs.db
