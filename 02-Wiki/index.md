@@ -1,37 +1,38 @@
 # 📚 LLM Wiki 索引
 
-**最后更新**: {{date}}  
-**总页面数**: {{page_count}}  
-**实体页面**: {{entity_count}}  
-**概念页面**: {{concept_count}}
+**最后更新**: 2026-04-13  
+**总页面数**: 2  
+**实体页面**: 1  
+**概念页面**: 1
 
 ---
 
 ## 🗂️ 按类型分类
 
 ### 👥 人物 (People)
-{{dataview_people}}
+_暂无页面_
 
 ### 🏢 公司 (Companies)
-{{dataview_companies}}
+_暂无页面_
 
 ### 🚀 项目 (Projects)
-{{dataview_projects}}
+- [[AI 研发范式]]
 
 ### 💡 概念 (Concepts)
-{{dataview_concepts}}
+- [[自主进化]]
 
 ---
 
 ## 📅 最近更新
 
-{{dataview_recent}}
+- [[AI 研发范式]]
+- [[自主进化]]
 
 ---
 
 ## 🔗 孤立页面 (待关联)
 
-{{dataview_orphans}}
+_待实现：检测没有双向链接的页面_
 
 ---
 

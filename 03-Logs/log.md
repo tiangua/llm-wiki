@@ -12,10 +12,21 @@
 - ✅ 配置 Hook (session-end 触发)
 - ✅ 创建 README.md
 
+## [2026-04-13 17:58] sync | GitHub 推送完成
+
+- ✅ 推送完整 Vault 到 tiangua/llm-wiki
+- ✅ 分支：main
+- ✅ 包含 .gitkeep 占位文件
+
+## [2026-04-13 18:33] create | 创建首批 Wiki 页面
+
+- ✅ 创建项目页面：[[AI 研发范式]]
+- ✅ 创建概念页面：[[自主进化]]
+- ✅ 更新索引文件 (index.md)
+- ✅ 建立双向链接
+
 **下一步**:
-- [ ] 在 Obsidian 中打开 Vault
-- [ ] 安装推荐插件 (Dataview, Templater, Obsidian Git)
-- [ ] 测试实体提取功能
-- [ ] 配置 Git 远程仓库 (可选)
+- [ ] 推送到 GitHub
+- [ ] 用户本地拉取查看
 
 ---
