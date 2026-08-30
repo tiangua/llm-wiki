@@ -163,3 +163,8 @@
 
 **下一步**:
 - [ ] 推送到 GitHub
+
+## [2026-08-30 14:50] add | 新增 PRAXIST 项目页
+
+- ✅ [[PRAXIST]] — Sapient Intelligence 的自主研究编排系统（类型化证据图 + 世代合成 + QD/DIG，arXiv:2608.25955，MLE-bench 80% 金牌率、1/12 成本）
+- ✅ 修复本地 origin/main 跟踪引用长期滞留旧值的问题（refs/remotes/origin/ 写入未持久化，手动重建引用文件后与远端确认同步）
