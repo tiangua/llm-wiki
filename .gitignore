@@ -1,4 +1,4 @@
-# Obsidian 个人配置 (不同步)
+# ===== Obsidian 个人配置（不同步，含缓存/工作区状态）=====
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
 .obsidian/appearance.css
@@ -6,17 +6,30 @@
 .obsidian/plugins/
 .obsidian/themes/
 .obsidian/snippets/
+.obsidian/cache
+.obsidian/*.json.bak
 
-# 附件 (可选，如果太大)
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+desktop.ini.bak
+*.lnk
+~$*
+
+# ===== 编辑器/IDE =====
+.vscode/
+.idea/
+
+# ===== 临时与日志 =====
+*.log
+*.tmp
+*~
+node_modules/
+
+# ===== 附件（可选：体积大时取消注释）=====
 # 06-Attachments/*.pdf
 # 06-Attachments/*.mp3
 # 06-Attachments/*.mp4
 # 06-Attachments/*.zip
-
-# 系统文件
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# 日志 (可选)
-*.log
+# 06-Attachments/*.exe
