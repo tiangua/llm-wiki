@@ -1,33 +1,33 @@
-# wiki 自动提交脚本（Windows 原生，双击即可运行）
-# 用法: 双击运行，或命令行带参数: auto-commit.bat "提交说明"
-
 @echo off
-chcp 65001 >nul
+rem wiki auto-commit script (double-click to run)
+rem usage: auto-commit.bat "commit message"
+
 cd /d %~dp0
 
-git status --porcelain >nul 2>&1
-if %errorlevel% neq 0 goto :fail
+git rev-parse --is-inside-work-tree >nul 2>&1
+if errorlevel 1 (
+    echo Not a git repository.
+    pause
+    exit /b 1
+)
 
 for /f %%i in ('git status --porcelain ^| find /c /v ""') do set COUNT=%%i
-if %COUNT%==0 (
-    echo 没有需要提交的变更
-    goto :end
+if "%COUNT%"=="0" (
+    echo Nothing to commit.
+    timeout /t 3 >nul
+    exit /b 0
 )
 
 git add -A
 if "%~1"=="" (
-    for /f "tokens=1,2 delims= " %%a in ('date /t') do set D=%%a
-    git commit -m "chore: auto-sync %DATE% %TIME:~0,8%"
+    git commit -m "chore: auto-sync %date% %time:~0,8%"
 ) else (
     git commit -m "%~1"
 )
 
 git push origin main
-if %errorlevel% neq 0 echo [warn] push 失败，本地提交已保存，下次网络恢复后再推
-goto :end
+if errorlevel 1 (
+    echo [warn] Push failed. Local commit is safe, push again later.
+)
 
-:fail
-echo git 命令执行失败
-
-:end
-timeout /t 3 >nul
+timeout /t 5 >nul
