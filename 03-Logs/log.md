@@ -134,3 +134,32 @@
 - [ ] 实现棘轮机制原型
 
 ---
+
+---
+
+## [2026-08-30 12:35] reorganize | Wiki 整理与基础设施修复
+
+**背景**: 环境迁移到 Windows（C:/wiki），修复同步基础设施后对 Wiki 做整体整理。
+
+### 基础设施
+- ✅ 本地克隆至 C:/wiki，配置 git 身份（tiangua）
+- ✅ 完善 .gitignore（Obsidian 缓存、系统文件、编辑器目录）
+- ✅ 新增 auto-commit.bat / auto-commit.sh 自动提交脚本（三轮修复：GBK 编码 → CRLF 换行 → 无系统 git 时回退 PortableGit 路径）
+- ✅ 凭据配置移至仓库本地（credential.helper store），绕过全局配置被反复重写的问题
+
+### 新增页面
+- ✅ [[TencentDB-Agent-Memory]] — 团队级记忆中枢（腾讯云）
+- ✅ [[MemQ]] — Q-Learning + 溯源 DAG 记忆 Agent（arXiv:2605.08374）
+- ✅ [[harden-v0]] — 对抗性验证器加固（arXiv:2606.08960）
+
+### 结构整理
+- ✅ 目录统一：02-Wiki/Projects/ 下 5 个页面并入 02-Wiki/Entities/Projects/（与 README 规范一致）
+- ✅ 重建 index.md：修正计数（项目实际 9 个而非 5 个）、新增主题地图（Agent 记忆与自进化三条主线）、新增死链清单
+- ✅ 更新 README.md：补全目录结构图（Papers 目录）、刷新统计、同步方式改为 auto-commit.bat
+
+### 待办
+- [ ] 创建高优先死链页面：[[楼澈]]（8 次引用）、[[OpenKedge]]、[[执行边界]]
+- [ ] 统一 `[[LLM Wiki]]` 与 `[[LLM Wiki (Karpathy)]]` 的指向混淆
+
+**下一步**:
+- [ ] 推送到 GitHub
