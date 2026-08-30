@@ -1,11 +1,11 @@
 # 📚 LLM Wiki 索引
 
-**最后更新**: 2026-04-20  
-**总页面数**: 15  
+**最后更新**: 2026-08-30  
+**总页面数**: 18  
 **实体页面**: 6  
 **概念页面**: 5  
 **论文页面**: 2  
-**项目页面**: 3
+**项目页面**: 5
 
 ---
 
@@ -24,6 +24,9 @@
 - [[达尔文.skill]] — 技能进化系统（评估→改进→测试→回滚）
 - [[VAKRA-Benchmark]] — 企业级 AI Agent 工具推理基准测试（IBM Research）
 - [[EverOS]] — 自进化 Agent 记忆操作系统 (EverMind-AI)
+- [[TencentDB-Agent-Memory]] — AI Agent 团队级记忆中枢（腾讯云，四种记忆资产 + L0-L3 分层）
+- [[MemQ]] — Q-Learning + 溯源 DAG 的自进化记忆 Agent（arXiv:2605.08374）
+- [[harden-v0]] — 对抗性 Hacker-Fixer 循环加固基准验证器（arXiv:2606.08960）
 
 ### 📄 论文 (Papers)
 - [[EvoSkill]] — 失败分析驱动的技能发现 (arXiv:2603.02766)
@@ -40,6 +43,9 @@
 
 ## 📅 最近更新
 
+- [[TencentDB-Agent-Memory]] (2026-08-30) — 新增
+- [[MemQ]] (2026-08-30) — 新增
+- [[harden-v0]] (2026-08-30) — 新增
 - [[EverOS]] (2026-04-20) — 新增
 - [[VAKRA-Benchmark]] (2026-04-16)
 - [[达尔文.skill]] (2026-04-14)
