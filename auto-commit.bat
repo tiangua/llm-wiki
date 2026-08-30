@@ -2,30 +2,38 @@
 rem wiki auto-commit script (double-click to run)
 rem usage: auto-commit.bat "commit message"
 
+setlocal
 cd /d %~dp0
 
-git rev-parse --is-inside-work-tree >nul 2>&1
+set GIT=git
+where git >nul 2>&1
 if errorlevel 1 (
-    echo Not a git repository.
+    set GIT=%USERPROFILE%\.workbuddy\binaries\PortableGit\versions\1.2.0\cmd\git.exe
+)
+
+%GIT% rev-parse --is-inside-work-tree >nul 2>&1
+if errorlevel 1 (
+    echo ERROR: git not found or not a git repository.
+    echo If git is missing, install Git for Windows and add it to PATH.
     pause
     exit /b 1
 )
 
-for /f %%i in ('git status --porcelain ^| find /c /v ""') do set COUNT=%%i
+for /f %%i in ('%GIT% status --porcelain ^| find /c /v ""') do set COUNT=%%i
 if "%COUNT%"=="0" (
     echo Nothing to commit.
     timeout /t 3 >nul
     exit /b 0
 )
 
-git add -A
+%GIT% add -A
 if "%~1"=="" (
-    git commit -m "chore: auto-sync %date% %time:~0,8%"
+    %GIT% commit -m "chore: auto-sync %date% %time:~0,8%"
 ) else (
-    git commit -m "%~1"
+    %GIT% commit -m "%~1"
 )
 
-git push origin main
+%GIT% push origin main
 if errorlevel 1 (
     echo [warn] Push failed. Local commit is safe, push again later.
 )
