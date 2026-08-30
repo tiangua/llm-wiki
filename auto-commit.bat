@@ -22,20 +22,21 @@ if errorlevel 1 (
 for /f %%i in ('%GIT% status --porcelain ^| find /c /v ""') do set COUNT=%%i
 if "%COUNT%"=="0" (
     echo Nothing to commit.
-    timeout /t 3 >nul
-    exit /b 0
-)
-
-%GIT% add -A
-if "%~1"=="" (
-    %GIT% commit -m "chore: auto-sync %date% %time:~0,8%"
 ) else (
-    %GIT% commit -m "%~1"
+    %GIT% add -A
+    if "%~1"=="" (
+        %GIT% commit -m "chore: auto-sync %date% %time:~0,8%"
+    ) else (
+        %GIT% commit -m "%~1"
+    )
 )
 
+rem always push, even when nothing new to commit
 %GIT% push origin main
 if errorlevel 1 (
     echo [warn] Push failed. Local commit is safe, push again later.
+) else (
+    echo [ok] Pushed to GitHub.
 )
 
 timeout /t 5 >nul
