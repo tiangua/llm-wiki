@@ -1,10 +1,10 @@
 # 📚 LLM Wiki 索引
 
 **最后更新**: 2026-08-30  
-**总页面数**: 19  
+**总页面数**: 20  
 **人物页面**: 1  
 **公司页面**: 1  
-**项目页面**: 10  
+**项目页面**: 11  
 **论文页面**: 2  
 **概念页面**: 5
 
@@ -33,6 +33,7 @@
 - [[VAKRA-Benchmark]] — 企业级 Agent 工具推理基准（IBM Research）
 - [[harden-v0]] — Hacker-Fixer 对抗循环加固基准验证器（arXiv:2606.08960）
 - [[协同进化验证]] — 无需真实测试数据的对抗式验证方法
+- [[运营Agent对抗测试系统]] — 楼澈的三层组合测试方案（对抗测试 + 评分加固 + 持续回归，内化 harden-v0 方法论）
 
 ### 本库自身的元知识
 - [[LLM Wiki (Karpathy)]] — 本库遵循的思想源头（LLM 维护、增量增长的知识产物）
@@ -60,6 +61,7 @@
 - [[VAKRA-Benchmark]]
 - [[harden-v0]]
 - [[PRAXIST]]
+- [[运营Agent对抗测试系统]]
 
 ### 📄 论文 (Papers)
 - [[EvoSkill]] (arXiv:2603.02766)
@@ -103,6 +105,7 @@
 
 ## 📅 最近更新
 
+- 2026-08-30: 新增 [[运营Agent对抗测试系统]]（楼澈×Lunar 方案设计，挂入主线三）
 - 2026-08-30: 新增 [[PRAXIST]]；新增 [[TencentDB-Agent-Memory]]、[[MemQ]]、[[harden-v0]]；目录结构统一（Projects 并入 Entities/Projects）；重建索引
 - 2026-04-20: 新增 [[EverOS]]
 - 2026-04-16: 新增 [[VAKRA-Benchmark]]

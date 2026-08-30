@@ -91,6 +91,7 @@ python -m harden --kernelbench-mode --task-id matmul \
 - [[协同进化验证]] — 对抗式验证思想
 - [[达尔文.skill]] — 评估闭环可借鉴三角色设计
 - [[EverOS]] / [[MemQ]] — 记忆与自进化方向（其基准评估的可靠性依赖此类工具）
+- [[运营Agent对抗测试系统]] — 楼澈将本项目的 hacker-fixer loop 方法论内化为评分规则加固层的应用方案
 
 ---
 
