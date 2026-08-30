@@ -1,10 +1,10 @@
 # 📚 LLM Wiki 索引
 
 **最后更新**: 2026-08-30  
-**总页面数**: 18  
+**总页面数**: 19  
 **人物页面**: 1  
 **公司页面**: 1  
-**项目页面**: 9  
+**项目页面**: 10  
 **论文页面**: 2  
 **概念页面**: 5
 
@@ -25,6 +25,7 @@
 - [[达尔文.skill]] — 技能进化系统（评估→改进→测试→回滚，棘轮机制）
 - [[EvoSkill]] — 失败分析驱动的技能发现 (arXiv:2603.02766)
 - [[EvoSkills]] — 协同进化验证 (arXiv:2604.01687)
+- [[PRAXIST]] — 自主研究编排：类型化证据图 + 世代合成（Sapient Intelligence, arXiv:2608.25955）
 - [[自进化技能]] — 核心概念，对比上述三种方案
 - [[自主进化]] — 更宏观的自进化理念（自我监控/反思/更新/迭代）
 
@@ -58,6 +59,7 @@
 - [[达尔文.skill]]
 - [[VAKRA-Benchmark]]
 - [[harden-v0]]
+- [[PRAXIST]]
 
 ### 📄 论文 (Papers)
 - [[EvoSkill]] (arXiv:2603.02766)
@@ -101,7 +103,7 @@
 
 ## 📅 最近更新
 
-- 2026-08-30: 新增 [[TencentDB-Agent-Memory]]、[[MemQ]]、[[harden-v0]]；目录结构统一（Projects 并入 Entities/Projects）；重建索引
+- 2026-08-30: 新增 [[PRAXIST]]；新增 [[TencentDB-Agent-Memory]]、[[MemQ]]、[[harden-v0]]；目录结构统一（Projects 并入 Entities/Projects）；重建索引
 - 2026-04-20: 新增 [[EverOS]]
 - 2026-04-16: 新增 [[VAKRA-Benchmark]]
 - 2026-04-14: 新增 [[达尔文.skill]]、[[EvoSkill]]、[[EvoSkills]]、[[协同进化验证]]、[[自进化技能]]
