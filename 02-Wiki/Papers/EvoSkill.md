@@ -6,7 +6,7 @@ authors: [Salaheddin Alzubi, ...]
 submitted: 2026-03-03
 institution: Unknown
 tags: [skill-evolution, multi-agent, automation, failure-analysis]
-related: [[自进化技能]], [[EvoSkills]], [[OpenKedge]]
+related: [[自进化技能]], [[EvoSkills]], [[WikiSkill]], [[执行层与知识层分离]], [[OpenKedge]]
 status: reviewed
 reviewed_date: 2026-04-14
 ---
@@ -106,10 +106,26 @@ Coding Agents 作为通用问题解决者，但缺乏特定领域的专业知识
 
 ---
 
+## 🔄 后续进展：被 WikiSkill 超越
+
+2026-08-27 的 [[WikiSkill]] 在同类基准上把 EvoSkill 列为基线并全面超越。两者共享「失败分析 → 提案 → 验证 → 保留提升项」的骨架，差别只在**是否单独维护一层持久知识**：
+
+| 方法 | Gemini-3.5-Flash 五基准平均 |
+|---|---|
+| No skill | 49.5 |
+| **EvoSkill** | 56.1 |
+| **WikiSkill** | **68.1** |
+
+EvoSkill 的历代提案历史也会累积，但它没有把「失败模式与成功策略」编译成可检索的结构化知识层，因此下一轮 Proposer 仍在从零开始猜。详见 [[执行层与知识层分离]]。
+
+---
+
 ## 🔗 相关页面
 
 - [[自进化技能]] — 核心概念
 - [[EvoSkills]] — 协同进化验证方案
+- [[WikiSkill]] — 同赛道的后继工作，已超越本方法
+- [[执行层与知识层分离]] — 解释本方法为何被超越的架构原则
 - [[OpenKedge]] — 执行边界安全设计
 - [[LLM Wiki (Karpathy)]] — 知识编译理念
 
@@ -124,6 +140,12 @@ Coding Agents 作为通用问题解决者，但缺乏特定领域的专业知识
 - ✅ 关联 OpenClaw 应用方向
 - ✅ 建立双向链接
 
+## [2026-09-02 23:16] update | 补充后继工作对比
+
+- ✅ 新增「后续进展」章节：[[WikiSkill]] 在同基准上 56.1 → 68.1 超越本方法
+- ✅ 点明差距根因：缺少可检索的持久知识层
+- ✅ 建立反向链接至 [[WikiSkill]] 与 [[执行层与知识层分离]]
+
 ---
 
-*由 LLM 自动维护 | 最后更新：2026-04-14*
+*由 LLM 自动维护 | 最后更新：2026-09-02*
